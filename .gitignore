@@ -1,0 +1,184 @@
+# ============================================================================
+# PRISM v2 - Comprehensive .gitignore
+# ============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+.env
+env.bak/
+venv.bak/
+*.virtualenv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vim/
+.emacs.d/
+
+# Editor temporaries
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+.#*
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lnk
+
+# Logs
+*.log
+logs/
+*.log.*
+prism.log
+debug.log
+
+# PRISM-specific
+.prism/
+~/.prism/
+.prism/sessions/*.json
+.prism/prism.log
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+.pytest_cache/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Node (if using web components)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Git
+.git/
+.gitmodules
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Temporary development files
+.dev/
+.tmp/
+.cache/
+
+# Secrets and credentials
+.env
+.env.local
+.env.*.local
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# Configuration overrides (local only)
+config.local.json
+settings.local.py
+prism.local.conf
+
+# Generated files
+*.generated.py
+generated/
+
+# Compiled documentation
+site/
+docs/_build/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dylib
+
+# Package manager files (if using pip-compile)
+requirements.lock
+
+# IDE specific cache
+*.vscode-workspace
+
+# System temp directories
+System Volume Information/
+$RECYCLE.BIN/
+
+# Keep important files even if they match patterns above
+!.gitkeep
+!.gitmodules
