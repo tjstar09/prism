@@ -47,9 +47,11 @@ try:
     from prompt_toolkit.lexers import Lexer
     from prompt_toolkit.styles import Style
     from prompt_toolkit.widgets import Frame, TextArea, SearchBufferControl
-    Application = Application
+    HAS_PROMPT_TOOLKIT = True
 except ImportError:
     Application = None
+    Lexer = object  # Fallback for MarkdownResponseLexer inheritance
+    HAS_PROMPT_TOOLKIT = False
 
 # ============================================================================
 # Configuration & Constants
